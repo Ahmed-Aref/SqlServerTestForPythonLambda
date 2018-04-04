@@ -1,4 +1,4 @@
-
+import pyodbc
 
 def main():
 
@@ -22,7 +22,7 @@ def main():
     # Execute the query
     Cur.execute(Query)
 
-    # Get the result
+    # Get the resultd
     Result = Cur.fetchall()
 
     # Delete cursor
@@ -30,5 +30,7 @@ def main():
 
     # Close Connection
     Conn.close()
+
+    print(Result)
 
     return Result
