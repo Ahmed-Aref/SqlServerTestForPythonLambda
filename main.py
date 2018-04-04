@@ -11,7 +11,7 @@ def main():
     TimeOut = 60
 
     # ConnectionString
-    ConnString = 'DRIVER={SQL Server};SERVER=' + Server + ';DATABASE=' + Database + ';UID=' + UserID + ';PWD=' + Password
+    ConnString = 'DRIVER={ODBC Driver 11 for SQL Server};SERVER=' + Server + ';DATABASE=' + Database + ';UID=' + UserID + ';PWD=' + Password
 
     # Generate connection string
     Conn = pyodbc.connect(ConnString, timeout=TimeOut)
