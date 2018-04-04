@@ -34,3 +34,5 @@ def main():
     print(Result)
 
     return Result
+
+main()
